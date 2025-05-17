@@ -33,4 +33,4 @@ external_components:
       path: components
 
 diesel_heater:
-  id: diesel_heater
+  id: my_diesel_heater
