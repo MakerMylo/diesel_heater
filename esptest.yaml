@@ -18,8 +18,8 @@ ota:
   password: "2e7988be0f583a9489438605afeb07ca"
 
 wifi:
-  ssid: xxx
-  password: xxx
+  ssid: xxxxxxxxxx
+  password: xxxxxxxxxx
 
   ap:
     ssid: "Esptest Fallback Hotspot"
@@ -30,7 +30,7 @@ captive_portal:
 external_components:
   - source:
       type: local
-      path: components/diesel_heater
+      path: components
 
 diesel_heater:
   id: diesel_heater
