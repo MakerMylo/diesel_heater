@@ -32,5 +32,17 @@ external_components:
       type: local
       path: components
 
+uart:
+  id: uart_bus
+  rx_pin: GPIO3
+  baud_rate: 9600
+
 diesel_heater:
   id: my_diesel_heater
+
+sensor:
+  - platform: template
+    name: "Diesel Heater Run State"
+    lambda: |-
+      return id(my_diesel_heater).get_run_state();
+    update_interval: 1s
