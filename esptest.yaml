@@ -1,0 +1,36 @@
+esphome:
+  name: esptest
+  friendly_name: ESPTest
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+logger:
+
+api:
+  encryption:
+    key: "bsaIO2P/WJjrj91bDcAH5LAmBeQKrcrIRYq2aMXUFdA="
+
+ota:
+  platform: "esphome"
+  password: "2e7988be0f583a9489438605afeb07ca"
+
+wifi:
+  ssid: xxx
+  password: xxx
+
+  ap:
+    ssid: "Esptest Fallback Hotspot"
+    password: "TkbT1LSU0yni"
+
+captive_portal:
+
+external_components:
+  - source:
+      type: local
+      path: components/diesel_heater
+
+diesel_heater:
+  id: diesel_heater
